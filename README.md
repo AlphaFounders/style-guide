@@ -1,7 +1,7 @@
 Style Guide
 ===========
 
-Style guide for Juwai
+Style guide for Alpha Founders
 
 + [PHP](language-php.md)
 + [Python](language-python.md)
