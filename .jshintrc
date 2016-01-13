@@ -1,0 +1,17 @@
+{
+    "predef": [
+        "window",
+        "document",
+        "$",          // jQuery
+        "jQuery",
+        "JW",         // Juwai
+        "App",        // Unify
+        "Datepicker",
+        "Ladda",      // Loading animation
+        "dataLayer"   // Google Tag Manager
+    ],
+    "eqnull": false,
+    "strict": true,
+    "undef":  true,   // Error for global variables.
+    "unused": false   // Error if some variables are not used.
+}
