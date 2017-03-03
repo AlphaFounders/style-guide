@@ -5,6 +5,20 @@
 
 Please refer to [Idiomatic CSS](https://github.com/necolas/idiomatic-css) for style–guides about CSS.
 
+### Properties ordering
+
+For better readability and maintainability the developers should group the properties by their type and order them according to the following scheme:
+```.selector {
+    - Positioning
+    - Display & Box Model
+    - Typography
+    - Decoration
+    - Other
+}
+```
+**NOTE:** the colors may be placed in the groups where they logically belong to, e.g. color goes to typography, border-color goes to box model.
+**NOTE:** it's **not** necessary to visually separate the groups by line breaks or comments - just grouping is enough.
+
 
 ### Inline-block layout
 
