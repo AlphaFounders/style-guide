@@ -68,7 +68,7 @@ Example (no attributes, short text):
 </tr>
 ```
 
-####Indentation for blade syntax
+#### Indentation for blade syntax
 
 * Always use intendations for __Blade__ constructions
 * We should follow PHP style guide, when we are using __Blade__ constructins. For instance:
@@ -83,8 +83,8 @@ Example (no attributes, short text):
     <p>This is appended to the master sidebar.</p>
     @for ($i...)
         <div class="some-div">
-            @if ($sectionTitle === 'extra')
-                <span>Some extra title</span>
+            @if ($sectionTitleType === 'extra')
+                <span>{{ $sectionTitle }}</span>
             @endif
             <p>Some very smart text.</p>
         </div>
