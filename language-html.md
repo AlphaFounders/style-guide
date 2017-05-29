@@ -30,6 +30,7 @@ So in our Rabbit team we decided not to close such void elements , i.e.
 <img class="my-class" id="void-element"
     src="please-do-not-use-slash-to-close-this-element"
 >
+```
 
 #### Multi–lines
 
