@@ -5,6 +5,7 @@
 
 Please refer to [Idiomatic CSS](https://github.com/necolas/idiomatic-css) for style–guides about CSS.
 
+
 ### Properties ordering
 
 For better readability and maintainability the developers should group the properties by their type and order them according to the following scheme:
@@ -22,6 +23,50 @@ For better readability and maintainability the developers should group the prope
 **NOTE:** the colors may be placed in the groups where they logically belong to, e.g. color goes to typography, border-color goes to box model.
 **NOTE:** it's **not** necessary to visually separate the groups by line breaks or comments - just grouping is enough.
 
+### Lines between selectors
+
+Split every selector by an empty line to improve readability
+* __NOT OK__
+```scss
+.selector1 {
+    margin: 0;
+    .child1 {
+        padding: 10px;
+    }
+    .child2 {
+        padding: 20px;
+    }
+}
+.selector2 {
+    position: absolute;
+    .child1 {
+        top: 0;
+    }
+}
+```
+
+* __OK__
+```scss
+.selector1 {
+    margin: 0;
+
+    .child1 {
+        padding: 10px;
+    }
+
+    .child2 {
+        padding: 20px;
+    }
+}
+
+.selector2 {
+    position: absolute;
+
+    .child1 {
+        top: 0;
+    }
+}
+```
 
 ### Inline-block layout
 
@@ -81,6 +126,7 @@ Use `.align-[top|middle|baseline|bottom]` to align the columns based on the base
 
 Use `.align-[left|center|right]` to align the columns to the left, center or right side or their container.
 
+
 ### Quotes
 
 Do not use quotation marks in URI values (url()), if you do need to use the `@charset` rule, use double quotes.
@@ -106,7 +152,7 @@ Do not use quotation marks in URI values (url()), if you do need to use the `@ch
     .sub-user-avatar {
         background-image: url(/images/sub-user-avatar-holder.png);
     }
-    
+
     .main-user-avatar {
         background-image: url(/images/main-user-avatar.png);
     }
